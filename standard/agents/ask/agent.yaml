@@ -1,0 +1,12 @@
+###
+agents:
+  - name: "ask"
+    display: "💬 Q&A"
+    description: "Deliver concise, reliable answers on a wide range of topics."
+    model: L1
+    instruction:
+      content: "resource:ask_system_role.md"
+    functions:
+      - "ai:*"
+      - "web:*"
+
