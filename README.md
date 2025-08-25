@@ -2,10 +2,10 @@
 
 This repository is for DHNT.io AI Cloud Hub feature requests and issue tracking.
 
-Cloud AI Hub is an online version of [AI CLI](https://github.com/qiangli/ai) is now live! [https://ai.dhnt.io](https://ai.dhnt.io)
+Cloud AI Hub, an online version of [AI CLI](https://github.com/qiangli/ai), is now live! [https://ai.dhnt.io](https://ai.dhnt.io)
 
 
-## DHNT.io domain name
+## Domain name
 
 DHNT is derived from the alphabet: abc *D* -efg *H* -ijklm *N* -opqrs *T* -uvwxyz
 
