@@ -1,9 +1,18 @@
-# dhnt.io
+# DHNT.io AI
 
-This repository is for DHNT.io AI Cloud Hub feature requests and issue tracking.
+This repository is for DHNT.io AI feature requests and issue tracking.
 
-Cloud AI Hub, an online version of [AI CLI](https://github.com/qiangli/ai), is now live! [https://ai.dhnt.io](https://ai.dhnt.io)
+DHNT.io AI Hub, an online version of [AI CLI](https://github.com/qiangli/ai), is now live! [https://ai.dhnt.io](https://ai.dhnt.io)
 
+
+## AI Cloud
+
+*DHNT.io AI Cloud* is an online tool designed for individual users, developers,
+and small businesses. It offers simplicity and features not available in products
+and services from major AI corporations.
+
+With DHNT.io AI Cloud, you can create agents, share your creations with
+family, friends, and teammates, and collaborate with agents on a daily basis.
 
 ## Domain name
 
