@@ -1,0 +1,8 @@
+###
+type: "mcp"
+api_key: "hf"
+
+connector:
+  base_url: "https://huggingface.co/mcp"
+
+###

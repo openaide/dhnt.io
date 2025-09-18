@@ -1,0 +1,24 @@
+#
+type: "web"
+# Add an entry "google" with your Google Search Engine ID and API Key seperated by colon at:
+# https://ai.dhnt.io/settings/api-key
+# <GOOGLE_SEARCH_ENGINE_ID>:<GOOGLE_API_KEY>
+api_key: "google"
+
+tools:
+  - name: "google_search"
+    description: "Search the web using Google and return formatted results"
+    parameters:
+      type: "object"
+      properties:
+        query:
+          type: "string"
+          description: "The search query string"
+        max_results:
+          type: "integer"
+          description: "Maximum number of results to return"
+          default: 5
+          minimum: 1
+          maximum: 10
+      required:
+        - query

@@ -1,6 +1,9 @@
 ###
 provider: "openai"
 base_url: "https://api.openai.com/v1/"
+# Add an entry "openai" with your OpenAI API Key at:
+# https://ai.dhnt.io/settings/api-key
+api_key: "openai"
 
 models:
   L1:

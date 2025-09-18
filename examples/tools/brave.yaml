@@ -1,0 +1,23 @@
+###
+type: "web"
+# Add an entry "brave" with your Brave API Key at:
+# https://ai.dhnt.io/settings/api-key
+api_key: "brave"
+
+tools:
+  - name: "brave_search"
+    description: "Search the web using Brave and return formatted results"
+    parameters:
+      type: "object"
+      properties:
+        query:
+          type: "string"
+          description: "The search query string"
+        max_results:
+          type: "integer"
+          description: "Maximum number of results to return"
+          default: 5
+          minimum: 1
+          maximum: 10
+      required:
+        - query

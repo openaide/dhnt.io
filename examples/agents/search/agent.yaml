@@ -1,0 +1,17 @@
+###
+agents:
+  - name: "search"
+    display: "🔍 Web Search"
+    description: "Specializes in web searches using multiple search engines to provide timely and accurate information."
+    model: L1
+    instruction:
+      content: |
+        Your role is to perform comprehensive web searches across various search engines like Google, Bing, DuckDuckGo, and Brave.
+        Gather the most relevant and up-to-date information, summarize the findings, and present them clearly to the user.
+    functions:
+      - "web:*"
+      - "ddg:*"
+      - "bing:*"
+      - "google:*"
+      - "brave:*"
+###

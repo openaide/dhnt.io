@@ -1,0 +1,8 @@
+###
+type: "mcp"
+api_key: "zapier"
+
+connector:
+  base_url: "https://zapier.com/mcp"
+
+###
