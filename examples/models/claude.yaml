@@ -1,0 +1,15 @@
+##
+base_url: "https://api.anthropic.com/"
+provider: "anthropic"
+# Add an entry "claude" with your Anthropic API Key at:
+# https://ai.dhnt.io/settings/api-key
+api_key: claude
+
+models:
+  L1:
+    model: "claude-3-5-haiku-latest"
+  L2:
+    model: "claude-sonnet-4-0"
+  L3:
+    model: "claude-opus-4-0"
+

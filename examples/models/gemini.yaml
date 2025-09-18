@@ -1,0 +1,18 @@
+##
+base_url: "https://generativelanguage.googleapis.com/v1beta/"
+provider: "gemini"
+# Add an entry "gemini" with your Google Gemini API Key at:
+# https://ai.dhnt.io/settings/api-key
+api_key: gemini
+
+models:
+  L1:
+    model: "gemini-2.0-flash-lite"
+  L2:
+    model: "gemini-2.0-flash"
+  L3:
+    model: "gemini-2.5-pro-preview-05-06"
+  Image:
+    model: "imagen-3.0-generate-002"
+    features:
+      image: true
