@@ -16,7 +16,7 @@ models:
     api_key: "anthropic"
   L3:
     model: "gpt-5"
-  Image:
-    model: "dall-e-3"
-  # tts:
+  # Image:
+  #  model: "dall-e-3"
+  # TTS:
   #   model: ""
