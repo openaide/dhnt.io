@@ -16,6 +16,10 @@
   
     [search](search/agent.yaml) - Specializes in web searches using multiple search engines to provide timely and accurate information.
 
+* Git Commit Message
+  
+  [git](git/agent.yaml)  - Generate git commit message based on users input and the provided diffs
+
 [YAML](https://yaml.org/) is used for setting up agents
 
 ```yaml
