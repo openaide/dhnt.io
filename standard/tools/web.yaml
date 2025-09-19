@@ -1,4 +1,5 @@
 kit: "web"
+type: "web"
 
 tools:
   - name: "fetch_content"
@@ -11,7 +12,6 @@ tools:
           description: "The webpage URL to fetch content from"
       required:
         - url
-    type: "func"
 
   - name: "download_content"
     description: "Download content from a given URL and save locally as is"
@@ -25,83 +25,3 @@ tools:
           type: "string"
           description: "The full file path to save the content to"
       required: ["url", "file"]
-    type: "func"
-
-  - name: "ddg_search"
-    description: "Search the web using DuckDuckGo and return formatted results"
-    parameters:
-      type: "object"
-      properties:
-        query:
-          type: "string"
-          description: "The search query string"
-        max_results:
-          type: "integer"
-          description: "Maximum number of results to return"
-          default: 5
-          minimum: 1
-          maximum: 10
-      required:
-        - query
-    type: "func"
-
-  - name: "bing_search"
-    description: "Search the web using Bing and return formatted results"
-    parameters:
-      type: "object"
-      properties:
-        query:
-          type: "string"
-          description: "The search query string"
-        max_results:
-          type: "integer"
-          description: "Maximum number of results to return"
-          default: 5
-          minimum: 1
-          maximum: 10
-      required:
-        - query
-    type: "func"
-
-  - name: "brave_search"
-    description: "Search the web using Brave and return formatted results"
-    parameters:
-      type: "object"
-      properties:
-        query:
-          type: "string"
-          description: "The search query string"
-        max_results:
-          type: "integer"
-          description: "Maximum number of results to return"
-          default: 5
-          minimum: 1
-          maximum: 10
-      required:
-        - query
-    type: "func"
-    condition:
-      env:
-        - BRAVE_API_KEY
-
-  - name: "google_search"
-    description: "Search the web using Google and return formatted results"
-    parameters:
-      type: "object"
-      properties:
-        query:
-          type: "string"
-          description: "The search query string"
-        max_results:
-          type: "integer"
-          description: "Maximum number of results to return"
-          default: 5
-          minimum: 1
-          maximum: 10
-      required:
-        - query
-    type: "func"
-    condition:
-      env:
-        - GOOGLE_API_KEY
-        - GOOGLE_SEARCH_ENGINE_ID
