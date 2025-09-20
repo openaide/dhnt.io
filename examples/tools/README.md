@@ -1,7 +1,7 @@
 # Tools Examples
 
 * Search
-  + [Brave](brame.yaml)
+  + [Brave](brave.yaml)
   + [Google](google.yaml)
 
 * MCP

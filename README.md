@@ -38,12 +38,11 @@ DHNT is derived from the alphabet: abc *D* -efg *H* -ijklm *N* -opqrs *T* -uvwxy
 
 ## How to ...
 
-### Create Agent
+### Create
 
-[YAML](https://yaml.org/) is used for setting up agents, tools, and models. See examples [here](examples/)
+[YAML](https://yaml.org/) is used for setting up agents, models, and tools. See examples [here](examples/)
 
 ```yaml
-###
 agents:
   - name: "ed"
     display: "✍️ Editor"
@@ -55,7 +54,43 @@ agents:
         accuracy in fact-checking, and clarity. Correct any mistakes or inconsistencies in spelling,
         punctuation, and word usage.
         Provide the final corrected version only in your response.
-###
+```
+
+```yaml
+provider: "openai"
+base_url: "https://api.openai.com/v1/"
+api_key: "openai"
+
+models:
+  L1:
+    model: "gpt-4.1-mini"
+  L2:
+    model: "gpt-4.1"
+  L3:
+    model: "o4-mini"
+```
+
+```yaml
+kit: "ddg"
+type: "web"
+
+tools:
+  - name: "ddg_search"
+    description: "Search the web using DuckDuckGo and return formatted results"
+    parameters:
+      type: "object"
+      properties:
+        query:
+          type: "string"
+          description: "The search query string"
+        max_results:
+          type: "integer"
+          description: "Maximum number of results to return"
+          default: 5
+          minimum: 1
+          maximum: 10
+      required:
+        - query
 ```
 
 ### Share
