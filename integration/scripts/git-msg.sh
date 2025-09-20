@@ -13,13 +13,16 @@
 #   models: name of active model alias.
 #   message: user input
 
-message="Generate a git commit message in no more than 100 words and 3 bullet points."
+raw="Generate a git commit message in no more than 100 words and 3 bullet points."
+message=$(echo $raw | sed 's/ /%20/g')
 
 # add "git" agent first. see examples/agents/git
 # read git diff from stdin, e.g.
 # git diff | git-msg.sh
 curl -XPOST -H "Authorization: Bearer $CURL_TOKEN" \
+    -H "Content-Type: plain/text" \
     -H "X-DHNT-Params: format=text;agent=git;models=default/any" \
     "https://ai.dhnt.io/gab?message=${message}" \
     --data-binary @- \
     -vvv
+

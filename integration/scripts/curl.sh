@@ -12,6 +12,7 @@
 #   models: name of active model alias.
 #
 curl -XPOST -H "Authorization: Bearer $CURL_TOKEN" \
+    -H "Content-Type: plain/text" \
     -H "X-DHNT-Params: format=json;agent=agent;models=default/any" \
     "https://ai.dhnt.io/gab?format=text&agent=news&models=gpt4/L1&message=what+is+new+today" \
     -vvv
